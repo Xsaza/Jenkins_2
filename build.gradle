@@ -8,23 +8,6 @@
  */
 
 // Apply the java plugin to add support for Java
-plugins {
-  id 'java'
-  id 'edu.sc.seis.launch4j' version '2.4.4'
-}
-
-launch4j {
-  mainClassName = 'com.example.myapp.Start'
-  icon = "${projectDir}/icons/myApp.ico"
-}
-
-// In this section you declare where to find the dependencies of your project
-repositories {
-    // Use 'jcenter' for resolving your dependencies.
-    // You can declare any Maven/Ivy/file repository here.
-    jcenter()
-}
-
 buildscript {
   repositories {
     jcenter()
@@ -45,6 +28,15 @@ launch4j {
   mainClassName = 'com.example.myapp.Start'
   icon = "${projectDir}/icons/myApp.ico"
 }
+
+// In this section you declare where to find the dependencies of your project
+repositories {
+    // Use 'jcenter' for resolving your dependencies.
+    // You can declare any Maven/Ivy/file repository here.
+    jcenter()
+}
+
+
 
 // In this section you declare the dependencies for your production and test code
 dependencies {
