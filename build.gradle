@@ -26,7 +26,6 @@ apply plugin: 'edu.sc.seis.launch4j'
 
 launch4j {
   mainClassName = 'com.example.myapp.Start'
-  icon = "${projectDir}/icons/myApp.ico"
 }
 
 // In this section you declare where to find the dependencies of your project
